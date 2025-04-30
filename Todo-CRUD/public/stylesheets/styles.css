@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+}
+
+/* title */
+.title-container{
+    width: 100vw;
+}
+.title{
+    color: whitesmoke;
+    font-size: 2.9rem;
+
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+    flex-wrap: wrap;
+}
+
+h1{
+    display: block;
+    text-align: center;
+}
+
+/* Reusable Style */
+.todo-name{
+    height: 2rem;
+    width: 15rem;
+    outline: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.todo-date{
+    height: 2rem;
+    width: 15rem;
+    outline: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.todo-btn{
+    height: 2rem;
+    width: 10rem;
+    border: none;  
+    background-color:greenyellow;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* result para */
+.result{
+    color:white;
+}
+
+.result{
+    height: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.todo-del-btn{
+    height: 2rem;
+    width: 10rem;
+    border: none;  
+    background-color:red;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 8rem;
+}
+

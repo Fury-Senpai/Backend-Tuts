@@ -1,4 +1,3 @@
-const { urlencoded } = require('body-parser');
 const express = require('express');
 const app = express();
 const fs = require('fs');
@@ -9,9 +8,12 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(express.static(path.join(__dirname , "public")));
 
-app.get('/' , (res,req) => {
-    console.log(files);
-    res.render(index,{files:files});
+app.get('/' , (req,res) => {
+    fs.readdir('./files',(err,files)=>{
+        console.log(files);
+        res.render('index',{files:files});
+    })
+
 })
 
 
@@ -19,7 +21,7 @@ let todos = [];
 app.post('/add-todo',(req,res)=>{
     const{name,date} = req.body;
 
-    const todo = {name,body};
+    const todo = {name,date};
     todos.push(todo);
 
     const fileName = `${name}-${date}.txt`;
