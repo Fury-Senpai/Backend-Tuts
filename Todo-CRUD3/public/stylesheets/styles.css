@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.input-title{
+    display: block;
+    margin-top: 20px;;
+    width: 450px;
+    margin-left: 20px;
+   
+}
+
+.task-detail{
+    display: block;
+    width: 450px;
+    margin-left: 20px;
+    margin-top: 20px;  
+   
+}
+
+.create-task{
+    margin-left: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: blue;
+    border: none;
+}
+
+.task{
+    background-color: rgb(46, 46, 46);
+    display:inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 12px;
+    
+    
+}
+
+.task-name{
+    color:white;
+}
+
+.read-more{
+    text-decoration: none;
+}
+
+.no-task{
+    color: rgb(46, 46, 46);
+    margin-top: 20px;
+    margin-left: 20px;
+}
