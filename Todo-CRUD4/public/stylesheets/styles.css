@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+}
+
+/* title */
+.title-container{
+    width: 100vw;
+}
+.title{
+    color: whitesmoke;
+    font-size: 2.9rem;
+
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+    flex-wrap: wrap;
+}
+
+h1{
+    display: block;
+    text-align: center;
+}
+
+/* Reusable Style */
+.todo-name{
+    height: 2rem;
+    width: 15rem;
+    outline: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.todo-date{
+    height: 2rem;
+    width: 15rem;
+    outline: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.todo-btn{
+    height: 2rem;
+    width: 10rem;
+    border: none;  
+    background-color:greenyellow;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* result para */
+.result{
+    color:white;
+}
+
+.result{
+  display: flex;
+  gap:10px;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.todo-del-btn{
+    height: 2rem;
+    width: 10rem;
+    border: none;  
+    background-color:red;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 8rem;
+}
+
+.task{
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    height: 100px;
+    width: 250px;
+    align-items: center;
+    gap:10px;
+    padding:5px;
+    justify-content: center;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-App</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css";>
+</head>
+<body>
+    <span class="title-container">
+        <h1 class="title">Todo App</h1>
+    </span>
+    
+    <div class="container" id="js-myForm">
+        <span >
+            <input class="todo-name js-todo-name" placeholder="Todo Name" name="jsName" >
+        </span>
+        <span >
+            <input type="date" class="todo-date js-todo-date" name="jsDate">
+        </span>
+        <span>
+            <button class="todo-btn js-btn" onclick= "todoRender()">Add</button>
+        </span>
+    </div>
+    <div class="result js-result">
+        <!-- <p class="result js-result"></p> -->
+    </div>
+    <script src="/javascripts/scripts.js"></script>
+</body>
+</html>
