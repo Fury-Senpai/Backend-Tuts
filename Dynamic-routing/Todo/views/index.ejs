@@ -11,9 +11,20 @@
         <input type="text" class="title" placeholder="Enter Todo Details" name="details">
         <button class="create-task">Create Task</button>
     </form>
-    <div class="result">
+    <div class="result" <%= let str = ''
+        if(files.length>0){
+            files.forEach(val){
+                str += `<div class="task">
+                    <h1 class="task-name">Some task goes here</h1>
+                    <a href="#" class="read-more">Read More</a>
+                </div>`
+            }
+        else{
+            str+= `<h3 class="no-task">No task created..</h3>`;
+        }
+        }%> >
 
     </div>
-    <script src="/public/scripts/script"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
