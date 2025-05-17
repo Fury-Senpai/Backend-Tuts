@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit-Task</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/update/<%= filename %>" method="post">
+            <div class="new-name-div">
+                <label>Previous Task Name:</label>
+                <input type="text" name="taskName" value="<%= filename.replace('.txt','') %>" disabled>
+                <input type="text" name="newTaskName" value="<%= %>" >
+            </div>
+            <div class="new-task-div">
+                <label>Previous Task Description:</label>
+                <input type="text" name="taskDetail" value="<%= taskDesc %>" disabled>
+                <input type="text" name="NewTaskDetail" value="<%= taskDesc %>" >
+            </div>
+            <div class="new-date-div">
+                <label>Previous Task Date:</label>
+                <input type="date" name="taskDate" value="<%= taskDate %>" disabled>
+            </div>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+</html>

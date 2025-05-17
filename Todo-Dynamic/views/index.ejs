@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoAPP</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/create" method="post" class="todo-app">
+            <input type="text" class="task-name" placeholder="Task Name" name="taskName">
+            <input type="text" class="task-detail" placeholder="Task Detail" name="taskDetail">
+            <input type="date" class="task-date" name="taskDate">
+            <button type="submit" class="submit-task">Submit</button>
+            
+        </form>
+        <div class="result">
+            <% if(files.length > 0){ %>
+                <div class="result-box">
+                    <% files.forEach((val)=>{ %>
+                        <div class="task-name"> <%= val.replace('.txt' , '') %> </div>
+                        <div class="links">
+                            <a href="/files/<%= val %>" class="task-detail">Read More</a>
+                            <a href="/edit/<%= val %>" class="edit-todo">Edit</a>
+                        </div>
+                    <% }) %>
+                </div> 
+            <% } else { %>
+                <div class="no-task">No task-yet..</div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
