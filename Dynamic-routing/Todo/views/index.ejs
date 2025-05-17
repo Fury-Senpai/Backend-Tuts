@@ -7,24 +7,25 @@
 </head>
 <body>
     <form action="/create" method = "post" class="todo-details" >
-        <input type="text" class="title" placeholder="Enter Todo Name" name="title" value="">
-        <input type="text" class="title" placeholder="Enter Todo Details" name="details">
+        <input type="text" class="title" placeholder="Enter Todo Name" name="title" >
+        <input type="text" class="title" placeholder="Enter Todo Details" name="details" >
         <button class="create-task">Create Task</button>
     </form>
-    <div class="result" <%= let str = ''
-        if(files.length>0){
-            files.forEach(val){
-                str += `<div class="task">
-                    <h1 class="task-name">Some task goes here</h1>
-                    <a href="#" class="read-more">Read More</a>
-                </div>`
-            }
-        else{
-            str+= `<h3 class="no-task">No task created..</h3>`;
-        }
-        }%> >
-
-    </div>
+    <% if(files.length > 0) { %> 
+        <div class="result">
+            <% files.forEach((val)=>{ %>
+                <div class="task-name"> <%= val.replace('.txt', '') %> </div>
+                <div class="links">
+                    <a href="/files/<%= val %>" class="task-detail">Read More</a>
+                    <a href="/edit/<%= val %>" class="edit-todo">Edit</a>
+                </div>
+                
+            <% } ) %>        
+        </div>    
+    <% }else{ %>
+        <div class="no-task">No task yet...</div>
+   <%  } %>
+    
     <script src="/scripts/script.js"></script>
 </body>
 </html>

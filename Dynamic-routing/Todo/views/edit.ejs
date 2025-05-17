@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit-page</title>
+</head>
+<body>
+    <div>
+        <a href="/" class="back">Go-Back</a>
+        <form action = "/edit" method="post">
+            <input type="text" class="previous-name" name="oldTitle" placeholder="" value="<%= filename.replace('.txt' , '') %>">
+            <input type="text" class="new-name" name="newTitle" placeholder="New Task">
+            <input type="text" class="previous-detail" name="oldDetail" placeholder="Previous data" value="<%= filedata %>">
+            <input type="text" class="previous-detail" name="newDetail" placeholder="New task Detail">
+            <button type = "submit" >Update Button</button>
+        </form>
+    </div>
+</body>
+</html>
