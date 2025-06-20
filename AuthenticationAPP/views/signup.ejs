@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="/stylesheets/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <h2 class="title">Create <br> Account</h2>
+        </div>
+        <div class="box-2">
+            <form action="/signup" method="post" class="create-form">
+            <input type="text" name="username" placeholder="username">
+            <input type="text" name="email" placeholder="email">
+            <input type="text" name="password" placeholder="password">
+            <input type="number" name="age" placeholder="age">
+            <input type="submit" value="Create Account" class="signup-button">
+        </form>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="box-3">
+            <p class="existing-acc">
+                Already have an account?
+            </p> 
+        </div>
+        <div class="box-4">
+            <a href="./login" class="sign-in">Sign In</a>
+        </div>
+    </div>
+</body>
+</html>
