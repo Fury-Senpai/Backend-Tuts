@@ -1,0 +1,66 @@
+/* Dark Mode Dashboard Styles */
+
+body {
+    background-color: #1E1E2F;
+    color: #EEEEEE;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard-container {
+    background-color: #2F2F3F;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 173, 181, 0.15);
+    width: 24em;
+    text-align: center;
+}
+
+.welcome-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00ADB5;
+}
+
+.data-box {
+    background-color: #393E46;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.data-box h2 {
+    color: #EEEEEE;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.data-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.data-box li {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+/* Logout button */
+.logout-button {
+    padding: 10px 20px;
+    background-color: #00ADB5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: #00BCC9;
+}
