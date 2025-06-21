@@ -79,8 +79,8 @@ app.post('/dashboard', async (req, res) => {
     const secretkey = '$k.df12jdkA$sS$';
     const token = jwt.sign({ userId: findUser._id }, secretkey);
 
-    res.cookie("token", token);
-    console.log("Login Successful");
+    const cookieData = res.cookie("token", token);
+    console.log(cookieData);
 
     
     res.redirect('/dashboard'); 
